@@ -2,18 +2,25 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-import Navbar from "./Navbar";
+import Navbar from "../Navbar";
 
-function Random(props) {
-  const [state, setState] = useState([]);
+function TypeChoice(props) {
+  const [state, setState] = useState({
+    id: "",
+    activity: "",
+    accessibility: 0,
+    type: "",
+    price: 0,
+    participants: "",
+  });
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const activity = props.match.params.id;
+        const choice = props.match.params.type;
 
         const response = await axios.get(
-          `http://www.boredapi.com/api/activity/`
+          `http://www.boredapi.com/api/activity?type=${choice}`
         );
 
         setState({ ...response.data });
@@ -22,7 +29,7 @@ function Random(props) {
       }
     }
     fetchData();
-  }, []);
+  }, [props]);
 
   function openTab() {
     window.open(state.link);
@@ -42,9 +49,12 @@ function Random(props) {
             <p>{state.link ? "hint" : ""}</p>
           </Link>
         </div>
+        <Link to="/type">
+          <button className="go-back">go back</button>
+        </Link>
       </div>
     </div>
   );
 }
 
-export default Random;
+export default TypeChoice;

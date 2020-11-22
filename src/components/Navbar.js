@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar">
       <Link to={"/"}>
         <img
-          src="https://i.postimg.cc/ZbdDV5LX/boredlogo-2.png"
+          src="https://i.ibb.co/3MBXp8r/boredlogo-3.png"
           className="logo-nav"
         />
       </Link>
@@ -20,8 +20,8 @@ const Navbar = () => {
         <Link className="link2" to={"/participants"}>
           by participants
         </Link>
-        <Link className="link2" to={"/accesibility"}>
-          by accesibility
+        <Link className="link2" to={"/accessibility"}>
+          by accessibility
         </Link>
         <Link className="link2 surprise" to={"/random"}>
           surprise me

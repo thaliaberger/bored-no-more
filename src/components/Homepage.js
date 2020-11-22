@@ -6,7 +6,7 @@ function Homepage() {
     <div className="homepage">
       <img
         className="logo"
-        src="https://i.postimg.cc/ZbdDV5LX/boredlogo-2.png"
+        src="https://i.ibb.co/3MBXp8r/boredlogo-3.png"
         alt="logo"
       />
       <div className="links-home">
@@ -19,8 +19,8 @@ function Homepage() {
         <Link className="link" to={"/participants"}>
           by participants
         </Link>
-        <Link className="link" to={"/accesibility"}>
-          by accesibility
+        <Link className="link" to={"/accessibility"}>
+          by accessibility
         </Link>
         <Link className="link surprise" to={"/random"}>
           surprise me

@@ -6,8 +6,10 @@ import Homepage from "./components/Homepage";
 import ByType from "./components/bytype/ByType";
 import ByPrice from "./components/byprice/ByPrice";
 import ByParticipants from "./components/byparticipants/ByParticipants";
-import ByAccesibility from "./components/byaccesibility/ByAccesibility";
+import ByAccessibility from "./components/byaccesibility/ByAccessibility";
 import Random from "./components/Random";
+import AccessibilityLevels from "./components/byaccesibility/AccessibilityLevels";
+import TypeChoice from "./components/bytype/TypeChoice";
 
 function App() {
   return (
@@ -18,8 +20,14 @@ function App() {
           <Route exact path="/type" component={ByType} />
           <Route exact path="/price" component={ByPrice} />
           <Route exact path="/participants" component={ByParticipants} />
-          <Route exact path="/accesibility" component={ByAccesibility} />
+          <Route exact path="/accessibility" component={ByAccessibility} />
           <Route exact path="/random" component={Random} />
+          <Route
+            exact
+            path="/accessibility/:accessibility"
+            component={AccessibilityLevels}
+          />
+          <Route exact path="/type/:type" component={TypeChoice} />
         </Switch>
       </BrowserRouter>
     </div>
