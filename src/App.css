@@ -121,7 +121,7 @@ body {
   width: 155px;
   height: 55px;
   font-size: 19px;
-  background-color: #4db9b8;
+  background-color: #389393;
 }
 
 /* BY TYPE */
@@ -222,15 +222,18 @@ body {
 
 .most {
   position: absolute;
-  margin-left: -1000px;
-  margin-top: 8%;
-  padding-bottom: 5px;
-  font-size: 10px;
-  background-color: #b1b1b1;
-  width: 82px;
+  top: 57%;
+  left: 7%;
+  width: 100px;
+}
+
+.most p {
+  text-align: center;
   color: #e4e4e4;
   border-radius: 10px;
-  padding: 0 5px;
+  padding: 0 1px;
+  font-size: 10px;
+  background-color: #b1b1b1;
 }
 
 /* GO BACK BUTTON */
@@ -279,6 +282,31 @@ body {
   border-radius: 50%;
   background: #4db9b8;
   cursor: pointer;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider-numbers {
+  position: absolute;
+  left: 7.2%;
+  display: flex;
+  flex-direction: row;
+  width: 1080px;
+  justify-content: space-around;
+  color: #b1b1b1;
+}
+
+.go-button {
+  position: absolute;
+  left: 47%;
+  margin-top: 100px;
+  border-style: none;
+  background-color: #e5df88;
+  color: #3f324d;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
 
 /* YOUTUBE PLAYLIST */
