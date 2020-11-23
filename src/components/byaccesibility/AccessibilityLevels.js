@@ -41,7 +41,12 @@ function AccessibilityLevels(props) {
       <div key={state.id} className="random">
         <h3>{state.activity ? state.activity.toLowerCase() : ""}</h3>
         <div className="random-p">
-          <p>accessibility: {state.accessibility}</p>
+          <p>
+            accessibility:{" "}
+            {state.accessibility > 0 || state.accessibility < 10
+              ? state.accessibility * 10
+              : state.accessibility}
+          </p>
           <p>type: {state.type}</p>
           <p>number of participants: {state.participants}</p>
           <p>price: {state.price === 0 ? "free" : state.price}</p>

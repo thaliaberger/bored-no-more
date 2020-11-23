@@ -5,15 +5,16 @@ import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 
 function ByAccessibility() {
-  //   output.innerHTML = slider.value;
-  // slider.oninput = function() {
-  //   output.innerHTML = this.value;
-  // }
+  const [state, setState] = useState(0);
+
+  function handleChange(event) {
+    setState(event.currentTarget.value);
+  }
   return (
     <div>
       <Navbar />
       <div className="access">
-        <Link className="access-link access-zero" to={"/accessibility/0"}>
+        {/* <Link className="access-link access-zero" to={"/accessibility/0"}>
           0
         </Link>
         <Link className="access-link" to={"/accessibility/0.1"}>
@@ -45,13 +46,39 @@ function ByAccessibility() {
         </Link>
         <Link className="access-link" to={"/accessibility/1"}>
           1
-        </Link>
-
-        <div className="most">most accessible</div>
+        </Link> */}
       </div>
-      {/* <div className="slidecontainer">
-        <input type="range" min="1" max="10" value="5" className="slider" />
-      </div> */}
+
+      <div className="slidecontainer">
+        <input
+          className="slider"
+          type="range"
+          min="0"
+          max="1"
+          step="0.1"
+          onChange={handleChange}
+        ></input>
+      </div>
+      <div className="slider-numbers">
+        <p>0</p>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+      </div>
+      <div className="most">
+        <p>most accessible</p>
+      </div>
+      <Link to={`/accessibility/${state}`}>
+        <button className="go-button">go</button>
+      </Link>
+      {/* <p>{state}</p> */}
     </div>
   );
 }
