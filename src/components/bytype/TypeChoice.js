@@ -35,6 +35,29 @@ function TypeChoice(props) {
     window.open(state.link);
   }
 
+  function playList(type) {
+    switch (type) {
+      case "diy":
+        return "https://www.youtube.com/embed/videoseries?list=PL4o29bINVT4EG_y-k5jGoOu3-Am8Nvi10";
+      case "cooking":
+        return "https://www.youtube.com/embed/videoseries?list=PLWlTX25IDqIwqowTsJmGhqxUWU_6qgG1W";
+      case "music":
+        return "https://www.youtube.com/embed/videoseries?list=PLk04Sg5I-2J2eFNupFjSCQBCaWVdgfWb4";
+      case "relaxation":
+        return "https://www.youtube.com/embed/videoseries?list=PLgzTt0k8mXzEpH7-dOCHqRZOsakqXmzmG";
+      case "busywork":
+        return "https://www.youtube.com/embed/videoseries?list=PLAWEj8wApm1wPxv851oi1qBATX9z9H6dZ";
+      case "education":
+        return "https://www.youtube.com/embed/videoseries?list=PLCULndnUE-_qsejHmyrPbci-RmI6liGbl";
+      case "charity":
+        return "https://www.youtube.com/embed/videoseries?list=PLoa2ILWoEoiFOezcQocVMOMzyJYrz7EQ8";
+      case "recreational":
+        return "https://www.youtube.com/embed/videoseries?list=PLj7hexz1cK1Q0urgcpxJpc-gETPAH8VFT";
+      case "social":
+        return "https://www.youtube.com/embed/videoseries?list=PL0Ea63JLhmBZ_QLx2CBC4QPeVNk3NUNne";
+    }
+  }
+
   return (
     <div>
       <Navbar />
@@ -52,6 +75,17 @@ function TypeChoice(props) {
         <Link to="/type">
           <button className="go-back">go back</button>
         </Link>
+        <div className="youtube">
+          <h3>suggested playlist for this category:</h3>
+          <iframe
+            width="560"
+            height="315"
+            src={playList(state.type)}
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          />
+        </div>
       </div>
     </div>
   );

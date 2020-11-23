@@ -5,11 +5,15 @@ import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 
 function ByAccessibility() {
+  //   output.innerHTML = slider.value;
+  // slider.oninput = function() {
+  //   output.innerHTML = this.value;
+  // }
   return (
     <div>
       <Navbar />
       <div className="access">
-        <Link className="access-link" to={"/accessibility/0"}>
+        <Link className="access-link access-zero" to={"/accessibility/0"}>
           0
         </Link>
         <Link className="access-link" to={"/accessibility/0.1"}>
@@ -42,7 +46,12 @@ function ByAccessibility() {
         <Link className="access-link" to={"/accessibility/1"}>
           1
         </Link>
+
+        <div className="most">most accessible</div>
       </div>
+      {/* <div className="slidecontainer">
+        <input type="range" min="1" max="10" value="5" className="slider" />
+      </div> */}
     </div>
   );
 }
