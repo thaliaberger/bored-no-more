@@ -57,6 +57,7 @@ function ByAccessibility() {
           max="1"
           step="0.1"
           onChange={handleChange}
+          value={state}
         ></input>
       </div>
       <div className="slider-numbers">

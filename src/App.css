@@ -276,6 +276,7 @@ body {
   cursor: pointer;
 }
 
+
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
@@ -300,7 +301,7 @@ body {
 
 .go-button {
   position: absolute;
-  left: 47%;
+  left: 47.5%;
   margin-top: 100px;
   border-style: none;
   background-color: #e5df88;
