@@ -1,29 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
-	font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-
   background-color: #e4e4e4;
-
 }
 
 /* HOMEPAGE */
 
 .logo {
-
-	position: absolute;
-	height: 100px;
-	display: flex;
-	left: 50%;
-	margin-left: -230px;
-	margin-top: 20px;
-}
-
-.link {
-
   position: absolute;
   height: 100px;
   display: flex;
@@ -43,44 +30,42 @@ body {
 .link:hover {
   color: #844fbd;
   font-size: 21px;
-
 }
 
 .links-home {
-	position: absolute;
-	left: 50%;
-	margin-left: -555px;
-	bottom: 40%;
-	background-color: #e5df88;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	height: 80px;
-	border-radius: 10px;
-	width: 1100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -555px;
+  bottom: 40%;
+  background-color: #e5df88;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  border-radius: 10px;
+  width: 1100px;
 }
 /* NAVBAR */
 
 .logo-nav {
-	height: 70px;
-	margin-left: 20px;
+  height: 70px;
+  margin-left: 20px;
 }
 
 .navbar {
-	background-color: #e5df88;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
+  background-color: #e5df88;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .links-navbar {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .link2 {
-
   font-size: 15px;
   color: #3f324d;
   text-decoration: none;
@@ -91,30 +76,15 @@ body {
 
 .link2:hover {
   color: #844fbd;
-
 }
 
 .surprise {
-	color: #389393;
+  color: #389393;
 }
 
 /* FUNDOS COLORIDOS NAS CATEGORIAS */
 
 .purple {
-
-	width: 150px;
-	height: 50px;
-	margin: 45px 80px;
-	background-color: #a37eba;
-	text-decoration: none;
-	color: #e8e8e8;
-	border-radius: 10px;
-	text-align: center;
-	padding-top: 25px;
-}
-
-.blue {
-
   width: 150px;
   height: 50px;
   margin: 35px 80px;
@@ -152,79 +122,24 @@ body {
   height: 55px;
   font-size: 19px;
   background-color: #389393;
-
 }
 
 /* BY TYPE */
 
 .firstRow {
-
   display: flex;
   justify-content: center;
   margin-top: 40px;
-
 }
 
 .secondRow {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .thirdRow {
-	display: flex;
-	justify-content: center;
-}
-
-/* BY PARTICIPANTS */
-
-.link-wrap {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding-top: 150px;
-	padding-left: 150px;
-	padding-right: 150px;
-}
-
-.participants-link img {
-	width: 100px;
-	height: 100px;
-}
-
-.howmany-participant {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-top: 80px;
-	color: #a37eba;
-	font-family: "Poppins", sans-serif;
-}
-.participants-link img:hover {
-	transform: scale(1.5);
-}
-
-.random {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 6%;
-	color: #389393;
-	margin-bottom: 7%;
-}
-
-.random-p {
-	background-color: #8ec6c5;
-	border-radius: 10px;
-	text-align: center;
-	width: 400px;
-}
-
-/* BY PRICE */
-
-.byprice-links img {
-	width: 20px;
-	height: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 /* RANDOM */
