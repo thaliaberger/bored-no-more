@@ -6,10 +6,12 @@ import Homepage from "./components/Homepage";
 import ByType from "./components/bytype/ByType";
 import ByPrice from "./components/byprice/ByPrice";
 import ByParticipants from "./components/byparticipants/ByParticipants";
-import ByAccesibility from "./components/byaccesibility/ByAccesibility";
+import ByAccessibility from "./components/byaccesibility/ByAccessibility";
 import Random from "./components/Random";
 import PriceLimit from "./components/byprice/PriceLimit";
-import ParticipantsNumber from "./components/byparticipants/ParticipantsNumber";
+import ParticipantsNumber from "./components/byparticipants/ParticipantsNumber
+import AccessibilityLevels from "./components/byaccesibility/AccessibilityLevels";
+import TypeChoice from "./components/bytype/TypeChoice";
 
 function App() {
 	return (
@@ -28,10 +30,18 @@ function App() {
 						path="/participantsnumber/:participants"
 						component={ParticipantsNumber}
 					/>
+      <Route exact path="/random" component={Random} />
+          <Route
+            exact
+            path="/accessibility/:accessibility"
+            component={AccessibilityLevels}
+          />
+          <Route exact path="/type/:type" component={TypeChoice} />
 				</Switch>
 			</BrowserRouter>
 		</div>
 	);
+
 }
 
 export default App;

@@ -2,18 +2,25 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-import Navbar from "./Navbar";
+import Navbar from "../Navbar";
 
-function Random(props) {
-  const [state, setState] = useState([]);
-
-  const [joke, setJokes] = useState([]);
+function AccessibilityLevels(props) {
+  const [state, setState] = useState({
+    id: "",
+    activity: "",
+    accessibility: 0,
+    type: "",
+    price: 0,
+    participants: "",
+  });
 
   useEffect(() => {
     async function fetchData() {
       try {
+        const level = props.match.params.accessibility;
+
         const response = await axios.get(
-          `http://www.boredapi.com/api/activity/`
+          `http://www.boredapi.com/api/activity?accessibility=${level}`
         );
 
         setState({ ...response.data });
@@ -22,22 +29,7 @@ function Random(props) {
       }
     }
     fetchData();
-  }, []);
-
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const jokes = await axios.get(
-          `https://official-joke-api.appspot.com/random_joke`
-        );
-
-        setJokes({ ...jokes.data });
-      } catch (err) {
-        console.error(err);
-      }
-    }
-    fetchData();
-  }, []);
+  }, [props]);
 
   function openTab() {
     window.open(state.link);
@@ -62,24 +54,12 @@ function Random(props) {
             <p>{state.link ? "hint" : ""}</p>
           </Link>
         </div>
-        <Link to="/random">
-          <button className="go-back" onClick="window.location.reload()">
-            try again
-          </button>
+        <Link to="/accessibility">
+          <button className="go-back">go back</button>
         </Link>
-        <div className="joke">
-          <h3>since you like surprises...</h3>
-          <p>{joke.setup ? joke.setup.toLowerCase() : ""}</p>
-          <div className="joke-btn-answer">
-            <button className="joke-button">see</button>
-            <p className="joke-answer">
-              {joke.punchline ? joke.punchline.toLowerCase() : ""}
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );
 }
 
-export default Random;
+export default AccessibilityLevels;
