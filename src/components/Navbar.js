@@ -18,7 +18,7 @@ const Navbar = () => {
           by price
         </Link>
         <Link className="link2" to={"/participants"}>
-          by participants
+          by number of participants
         </Link>
         <Link className="link2" to={"/accessibility"}>
           by accessibility
