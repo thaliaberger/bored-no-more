@@ -17,7 +17,7 @@ function Homepage() {
           by price
         </Link>
         <Link className="link" to={"/participants"}>
-          by participants
+          by number of participants
         </Link>
         <Link className="link" to={"/accessibility"}>
           by accessibility

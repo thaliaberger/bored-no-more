@@ -72,7 +72,22 @@ function TypeChoice(props) {
           </p>
           <p>type: {state.type}</p>
           <p>number of participants: {state.participants}</p>
-          <p>price: {state.price === 0 ? "free" : state.price}</p>
+          <p>
+            price:{" "}
+            {state.price === 0
+              ? "free"
+              : (state.price === 0.1) | (state.price === 0.2)
+              ? "$"
+              : (state.price === 0.3) | (state.price === 0.4)
+              ? "$$"
+              : (state.price === 0.5) | (state.price === 0.6)
+              ? "$$$"
+              : (state.price === 0.7) | (state.price === 0.8)
+              ? "$$$$"
+              : (state.price === 0.9) | (state.price === 1)
+              ? "$$$$$"
+              : ""}
+          </p>
           <Link onClick={openTab} className="external-link">
             <p>{state.link ? "hint" : ""}</p>
           </Link>

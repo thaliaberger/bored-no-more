@@ -5,44 +5,67 @@ import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 
 function ParticipantsNumber(props) {
-	const [state, setState] = useState({
-		id: "",
-		activity: "",
-		accessibility: 0,
-		type: "",
-		price: 0,
-		participants: "",
-	});
+  const [state, setState] = useState({
+    id: "",
+    activity: "",
+    accessibility: 0,
+    type: "",
+    price: 0,
+    participants: "",
+  });
 
-	useEffect(() => {
-		async function fetchData() {
-			try {
-				const participants = props.match.params.participants;
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const participants = props.match.params.participants;
 
-				const response = await axios.get(
-					`http://www.boredapi.com/api/activity?participants=${participants}`
-				);
+        const response = await axios.get(
+          `http://www.boredapi.com/api/activity?participants=${participants}`
+        );
 
-				setState({ ...response.data });
-			} catch (err) {}
-		}
-		fetchData();
-	}, [props]);
+        setState({ ...response.data });
+      } catch (err) {}
+    }
+    fetchData();
+  }, [props]);
 
-	return (
-		<div>
-			<Navbar />
-			<div key={state.id} className="random">
-				<h3>{state.activity ? state.activity.toUpperCase() : ""}</h3>
-				<div className="random-p">
-					<p>accessibility: {state.accessibility}</p>
-					<p>type: {state.type}</p>
-					<p>number of participants: {state.participants}</p>
-					<p>price: {state.price === 0 ? "free" : state.price}</p>
-				</div>
-			</div>
-		</div>
-	);
+  return (
+    <div>
+      <Navbar />
+      <div key={state.id} className="random">
+        <h3>{state.activity ? state.activity.toLowerCase() : ""}</h3>
+        <div className="random-p">
+          <p>
+            accessibility:{" "}
+            {state.accessibility > 0 || state.accessibility < 10
+              ? state.accessibility * 10
+              : state.accessibility}
+          </p>
+          <p>type: {state.type}</p>
+          <p>number of participants: {state.participants}</p>
+          <p>
+            price:{" "}
+            {state.price === 0
+              ? "free"
+              : (state.price === 0.1) | (state.price === 0.2)
+              ? "$"
+              : (state.price === 0.3) | (state.price === 0.4)
+              ? "$$"
+              : (state.price === 0.5) | (state.price === 0.6)
+              ? "$$$"
+              : (state.price === 0.7) | (state.price === 0.8)
+              ? "$$$$"
+              : (state.price === 0.9) | (state.price === 1)
+              ? "$$$$$"
+              : ""}
+          </p>
+        </div>
+        <Link to="/participants">
+          <button className="go-back">go back</button>
+        </Link>
+      </div>
+    </div>
+  );
 }
 
 export default ParticipantsNumber;
