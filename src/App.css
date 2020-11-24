@@ -201,6 +201,7 @@ body {
 .byprice-links {
   display: flex;
   flex-direction: row;
+  margin-top: 50px;
 }
 
 .free-text {
@@ -222,11 +223,11 @@ body {
 .byprice {
   position: absolute;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   width: 800px;
-  margin-top: 15%;
+  margin-top: 13%;
   left: 20%;
 }
 
@@ -373,7 +374,6 @@ body {
   background: #4db9b8;
   cursor: pointer;
 }
-
 
 .slider::-moz-range-thumb {
   width: 25px;

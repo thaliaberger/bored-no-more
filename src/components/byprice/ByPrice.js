@@ -7,10 +7,16 @@ import Navbar from "../Navbar";
 function ByPrice() {
   function darker(event) {
     event.target.style.color = "rgb(56,147,147)";
+    let cifrao = Array.from(event.target.parentElement.children);
+    cifrao.map((item) =>
+      item.id <= event.target.id ? (item.style.color = "rgb(56,147,147)") : ""
+    );
   }
 
   function regular(event) {
-    event.target.style.color = "rgb(142,198,197)";
+    // event.target.style.color = "rgb(142,198,197)";
+    let cifrao = Array.from(event.target.parentElement.children);
+    cifrao.map((item) => (item.style.color = "rgb(142,198,197)"));
   }
 
   return (
