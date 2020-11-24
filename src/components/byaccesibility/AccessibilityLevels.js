@@ -63,7 +63,7 @@ function AccessibilityLevels(props) {
               ? "$$$$"
               : (state.price === 0.9) | (state.price === 1)
               ? "$$$$$"
-              : ""}
+              : "$"}
           </p>
           <Link onClick={openTab} className="external-link">
             <p>{state.link ? "hint" : ""}</p>

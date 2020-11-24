@@ -57,7 +57,7 @@ function ParticipantsNumber(props) {
               ? "$$$$"
               : (state.price === 0.9) | (state.price === 1)
               ? "$$$$$"
-              : ""}
+              : "$$$"}
           </p>
         </div>
         <Link to="/participants">

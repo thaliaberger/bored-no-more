@@ -21,7 +21,7 @@ body {
 
 .link {
   font-size: 20px;
-  color: #3f324d;
+  color: #9e8e00;
   text-decoration: none;
   text-align: center;
   transition-duration: 0.5s;
@@ -67,7 +67,7 @@ body {
 
 .link2 {
   font-size: 15px;
-  color: #3f324d;
+  color: #9e8e00;
   text-decoration: none;
   text-align: center;
   padding: 0 35px;
@@ -271,7 +271,7 @@ body {
   right: 48%;
   border-style: none;
   background-color: #e5df88;
-  color: #3f324d;
+  color: #9e8e00;
   border-radius: 10px;
   padding: 5px 10px;
   margin-top: 30px;
@@ -341,7 +341,7 @@ body {
   margin-top: 40px;
   border-style: none;
   background-color: #e5df88;
-  color: #3f324d;
+  color: #9e8e00;
   border-radius: 10px;
   padding: 5px 10px;
 }
