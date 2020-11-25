@@ -13,7 +13,7 @@ function Random(props) {
     async function fetchData() {
       try {
         const response = await axios.get(
-          `http://www.boredapi.com/api/activity/`
+          `https://www.boredapi.com/api/activity/`
         );
 
         setState({ ...response.data });
