@@ -10,7 +10,7 @@ function PriceLimit(props) {
     activity: "",
     accessibility: 0,
     type: "",
-    price: 0,
+    price: "",
     participants: "",
   });
 
