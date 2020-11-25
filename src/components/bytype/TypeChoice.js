@@ -80,11 +80,11 @@ function TypeChoice(props) {
               ? "$"
               : (state.price === 0.3) | (state.price === 0.4)
               ? "$$"
-              : (state.price === 0.5) | (state.price === 0.6)
+              : state.price === 0.5
               ? "$$$"
-              : (state.price === 0.7) | (state.price === 0.8)
+              : state.price === 0.6
               ? "$$$$"
-              : (state.price === 0.9) | (state.price === 1)
+              : (state.price === 0.7) | (state.price === 0.8)
               ? "$$$$$"
               : "$$$"}
           </p>
