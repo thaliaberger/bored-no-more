@@ -21,7 +21,7 @@ body {
 
 .link {
   font-size: 20px;
-  color: #3f324d;
+  color: #9e8e00;
   text-decoration: none;
   text-align: center;
   transition-duration: 0.5s;
@@ -42,7 +42,7 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 80px;
-  border-radius: 10px;
+  border-radius: 20px;
   width: 1100px;
 }
 /* NAVBAR */
@@ -67,7 +67,7 @@ body {
 
 .link2 {
   font-size: 15px;
-  color: #3f324d;
+  color: #9e8e00;
   text-decoration: none;
   text-align: center;
   padding: 0 35px;
@@ -159,6 +159,7 @@ body {
 .participants-link img {
   width: 100px;
   height: 100px;
+  transition-duration: 0.5s;
 }
 
 .howmany-participant {
@@ -213,6 +214,7 @@ body {
   border-radius: 15px;
   padding: 10px;
   margin-top: 100px;
+  transition-duration: 0.5s;
 }
 
 .free-text:hover {
@@ -228,7 +230,7 @@ body {
   align-items: center;
   width: 800px;
   margin-top: 13%;
-  left: 20%;
+  left: 19%;
 }
 
 /* RANDOM */
@@ -268,10 +270,10 @@ body {
 
 .joke-button {
   position: absolute;
-  right: 48%;
+  right: 48.2%;
   border-style: none;
   background-color: #e5df88;
-  color: #3f324d;
+  color: #9e8e00;
   border-radius: 10px;
   padding: 5px 10px;
   margin-top: 30px;
@@ -341,7 +343,7 @@ body {
   margin-top: 40px;
   border-style: none;
   background-color: #e5df88;
-  color: #3f324d;
+  color: #9e8e00;
   border-radius: 10px;
   padding: 5px 10px;
 }

@@ -14,7 +14,6 @@ function ByPrice() {
   }
 
   function regular(event) {
-    // event.target.style.color = "rgb(142,198,197)";
     let cifrao = Array.from(event.target.parentElement.children);
     cifrao.map((item) => (item.style.color = "rgb(142,198,197)"));
   }
