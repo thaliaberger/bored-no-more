@@ -39,7 +39,8 @@ function ByAccessibility() {
         <p>10</p>
       </div>
       <div className="most">
-        <p>most accessible</p>
+        <p className="easy">easier to do</p>
+        <p className="hard">harder to do</p>
       </div>
       <Link to={`/accessibility/${state}`}>
         <button className="go-button">go</button>
