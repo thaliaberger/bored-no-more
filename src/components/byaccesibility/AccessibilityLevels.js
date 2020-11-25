@@ -20,7 +20,7 @@ function AccessibilityLevels(props) {
         const level = props.match.params.accessibility;
 
         const response = await axios.get(
-          `http://www.boredapi.com/api/activity?accessibility=${level}`
+          `https://www.boredapi.com/api/activity?accessibility=${level}`
         );
 
         setState({ ...response.data });

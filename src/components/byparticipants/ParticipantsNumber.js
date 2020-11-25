@@ -20,7 +20,7 @@ function ParticipantsNumber(props) {
         const participants = props.match.params.participants;
 
         const response = await axios.get(
-          `http://www.boredapi.com/api/activity?participants=${participants}`
+          `https://www.boredapi.com/api/activity?participants=${participants}`
         );
 
         setState({ ...response.data });

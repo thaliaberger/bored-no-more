@@ -323,18 +323,39 @@ body {
 
 .most {
   position: absolute;
+  display: flex;
+  flex-direction: row;
   top: 57%;
-  left: 7%;
-  width: 100px;
+  left: 8%;
+  padding: 2px;
+}
+
+.easy {
+  width: 70px;
 }
 
 .most p {
   text-align: center;
   color: #e4e4e4;
   border-radius: 10px;
-  padding: 0 1px;
   font-size: 10px;
   background-color: #b1b1b1;
+  padding: 0 4px;
+}
+
+.hard {
+  margin-left: 900px;
+  width: 70px;
+}
+
+.hard p {
+  margin-left: 300px;
+  text-align: center;
+  color: #e4e4e4;
+  border-radius: 10px;
+  font-size: 10px;
+  background-color: #b1b1b1;
+  padding: 0 4px;
 }
 
 /* GO BACK BUTTON */

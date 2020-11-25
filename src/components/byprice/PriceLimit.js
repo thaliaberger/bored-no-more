@@ -20,7 +20,7 @@ function PriceLimit(props) {
         const price = props.match.params.price;
 
         const response = await axios.get(
-          `http://www.boredapi.com/api/activity?price=${price}`
+          `https://www.boredapi.com/api/activity?price=${price}`
         );
 
         setState({ ...response.data });

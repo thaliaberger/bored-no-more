@@ -20,7 +20,7 @@ function TypeChoice(props) {
         const choice = props.match.params.type;
 
         const response = await axios.get(
-          `http://www.boredapi.com/api/activity?type=${choice}`
+          `https://www.boredapi.com/api/activity?type=${choice}`
         );
 
         setState({ ...response.data });
