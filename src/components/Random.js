@@ -45,7 +45,7 @@ function Random(props) {
 
   function redirect() {
     window.open("/", "_self");
-    window.open("/random", "_self");
+    setTimeout(function(){ window.open("/random", "_self"); }, 100);
   }
 
   return (
