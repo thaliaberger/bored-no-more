@@ -500,7 +500,7 @@ body {
   }
 
   .firstRow {
-    margin-top: 20%;
+    margin-top: 100px;
   }
 
   .random-p {
@@ -554,7 +554,7 @@ body {
 
 /* SMALL */
 
-@media screen and (max-width: 900px) and (orientation: portrait) {
+@media screen and (min-width: 576px) and (orientation: portrait) {
   .logo {
     position: absolute;
     height: 50px;
@@ -568,7 +568,7 @@ body {
     position: absolute;
     left: 50%;
     margin-left: -150px;
-    bottom: 30%;
+    top: 400px;
     background-color: #e5df88;
     display: flex;
     justify-content: center;
@@ -623,7 +623,7 @@ body {
   }
 
   .firstRow {
-    margin-top: 50%;
+    margin-top: 200px;
   }
 
   .link-wrap {
@@ -635,7 +635,7 @@ body {
   .participants-link img {
     width: 60px;
     height: 60px;
-    margin-bottom: 20px;
+    margin-top: 60px;
   }
 
   .byprice {
@@ -668,5 +668,10 @@ body {
     margin-top: 400px;
     left: 48%;
     padding: 5px 10px;
+  }
+
+  .random {
+    margin-top: 100px;
+    margin-bottom: 7%;
   }
 }
