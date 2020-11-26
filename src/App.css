@@ -449,18 +449,26 @@ body {
     margin-top: 10%;
   }
 
+  .link {
+    background-color: #e5df88;
+    width: 300px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+
   .links-home {
     position: absolute;
     left: 50%;
     margin-left: -150px;
-    bottom: 40%;
-    background-color: #e5df88;
+    top: 300px;
     display: flex;
+    background-color: #e4e4e4;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     height: 200px;
-    border-radius: 20px;
+    border-radius: 0;
     width: 300px;
     line-height: 37px;
   }
@@ -554,7 +562,7 @@ body {
 
 /* SMALL */
 
-@media screen and (min-width: 576px) and (orientation: portrait) {
+@media screen and (min-width: 575px) and (orientation: portrait) {
   .logo {
     position: absolute;
     height: 50px;
@@ -568,16 +576,24 @@ body {
     position: absolute;
     left: 50%;
     margin-left: -150px;
-    top: 400px;
-    background-color: #e5df88;
+    top: 300px;
     display: flex;
+    background-color: #e4e4e4;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     height: 200px;
-    border-radius: 20px;
+    border-radius: 0;
     width: 300px;
     line-height: 37px;
+  }
+
+  .link {
+    background-color: #e5df88;
+    width: 300px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
   }
 
   .homepage {
@@ -623,7 +639,7 @@ body {
   }
 
   .firstRow {
-    margin-top: 200px;
+    margin-top: 100px;
   }
 
   .link-wrap {
