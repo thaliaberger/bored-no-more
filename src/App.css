@@ -270,7 +270,10 @@ body {
 
 .joke-button {
   position: absolute;
-  right: 48.2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 48.6%;
   border-style: none;
   background-color: #e5df88;
   color: #9e8e00;
@@ -299,34 +302,26 @@ body {
 
 /* ACCESSIBILITY */
 
-.access-link {
-  color: #389393;
-  background-color: #8ec6c5;
-  margin: 15px;
-  border-radius: 10px;
-  width: 70px;
-  height: 45px;
-  text-align: center;
-  padding-top: 25px;
-  text-decoration: none;
-}
-
-.access-link:hover {
-  background-color: #4db9b8;
+.slidecontainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: 35%;
 }
 
 .access {
   display: flex;
   justify-content: center;
-  margin-top: 15%;
+  align-items: center;
 }
 
 .most {
   position: absolute;
   display: flex;
   flex-direction: row;
-  top: 57%;
-  left: 8%;
+  justify-content: space-between;
+  width: 1100px;
+  top: 60%;
   padding: 2px;
 }
 
@@ -344,7 +339,6 @@ body {
 }
 
 .hard {
-  margin-left: 900px;
   width: 70px;
 }
 
@@ -376,7 +370,6 @@ body {
 /* SLIDER */
 
 .slider {
-  margin-left: 10%;
   -webkit-appearance: none;
   width: 1000px;
   height: 15px;
@@ -412,18 +405,18 @@ body {
 
 .slider-numbers {
   position: absolute;
-  left: 7.2%;
   display: flex;
   flex-direction: row;
-  width: 1080px;
   justify-content: space-around;
+  width: 1080px;
+  top: 50%;
   color: #b1b1b1;
 }
 
 .go-button {
   position: absolute;
-  left: 47.5%;
-  margin-top: 100px;
+  margin-top: 28%;
+  left: 48%;
   border-style: none;
   background-color: #e5df88;
   color: #3f324d;
