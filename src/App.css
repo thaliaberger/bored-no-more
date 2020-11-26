@@ -240,7 +240,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 6%;
+  margin-top: 7%;
   color: #389393;
   margin-bottom: 7%;
 }
@@ -273,13 +273,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 48.6%;
   border-style: none;
   background-color: #e5df88;
   color: #9e8e00;
   border-radius: 10px;
-  padding: 5px 10px;
-  margin-top: 30px;
+  padding: 5px 15px;
 }
 
 .joke-btn-answer:hover .joke-answer {
@@ -292,11 +290,15 @@ body {
 }
 
 .joke-btn-answer {
-  height: 110px;
+  height: 100px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .joke-answer {
-  margin-top: 90px;
+  margin-top: 140px;
   display: none;
 }
 
@@ -431,4 +433,240 @@ body {
   flex-direction: column;
   margin-top: 70px;
   margin-bottom: 50px;
+}
+
+/* RESPONSIVIDADE */
+
+/* EXTRA SMALL */
+
+@media (max-width: 575px) and (orientation: portrait) {
+  .logo {
+    position: absolute;
+    height: 50px;
+    display: flex;
+    left: 50%;
+    margin-left: -120px;
+    margin-top: 10%;
+  }
+
+  .links-home {
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    bottom: 40%;
+    background-color: #e5df88;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    border-radius: 20px;
+    width: 300px;
+    line-height: 37px;
+  }
+
+  .logo-nav {
+    height: 30px;
+  }
+
+  .link2 {
+    font-size: 10px;
+    padding: 0 12px;
+  }
+
+  .links-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .purple {
+    width: 110px;
+    height: 50px;
+    margin: 20px 5px;
+  }
+
+  .blue {
+    width: 110px;
+    height: 50px;
+    margin: 20px 5px;
+  }
+
+  .firstRow {
+    margin-top: 20%;
+  }
+
+  .random-p {
+    width: 300px;
+  }
+
+  .link-wrap {
+    flex-direction: column;
+    padding: 40px;
+    left: 50%;
+  }
+
+  .participants-link img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+
+  .byprice {
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: 40%;
+  }
+
+  .slidecontainer {
+    margin-top: 95%;
+  }
+
+  .most {
+    width: 300px;
+    top: 40%;
+  }
+
+  .slider {
+    width: 300px;
+  }
+
+  .slider-numbers {
+    justify-content: space-around;
+    width: 300px;
+    top: 25%;
+  }
+
+  .go-button {
+    margin-top: 80%;
+    left: 48%;
+    padding: 5px 10px;
+  }
+}
+
+/* SMALL */
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+  .logo {
+    position: absolute;
+    height: 50px;
+    display: flex;
+    left: 50%;
+    margin-left: -120px;
+    margin-top: 10%;
+  }
+
+  .links-home {
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    bottom: 30%;
+    background-color: #e5df88;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    border-radius: 20px;
+    width: 300px;
+    line-height: 37px;
+  }
+
+  .homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-nav {
+    height: 25px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .link2 {
+    font-size: 15px;
+    padding: 0 5px;
+  }
+
+  .links-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .purple {
+    width: 110px;
+    height: 50px;
+    margin: 20px 5px;
+  }
+
+  .blue {
+    width: 110px;
+    height: 50px;
+    margin: 20px 5px;
+  }
+
+  .firstRow {
+    margin-top: 50%;
+  }
+
+  .link-wrap {
+    flex-direction: column;
+    padding: 40px;
+    left: 50%;
+  }
+
+  .participants-link img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+
+  .byprice {
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: 30%;
+  }
+
+  .slidecontainer {
+    margin-top: 370px;
+  }
+
+  .most {
+    width: 300px;
+    top: 40%;
+  }
+
+  .slider {
+    width: 300px;
+  }
+
+  .slider-numbers {
+    justify-content: space-around;
+    width: 300px;
+    top: 300px;
+  }
+
+  .go-button {
+    margin-top: 400px;
+    left: 48%;
+    padding: 5px 10px;
+  }
 }
