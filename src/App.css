@@ -511,7 +511,6 @@ body {
     flex-direction: column;
     padding: 40px;
     left: 50%;
-    margin-left: -50px;
   }
 
   .participants-link img {
@@ -524,6 +523,32 @@ body {
     width: 300px;
     left: 50%;
     margin-left: -150px;
+    margin-top: 40%;
+  }
+
+  .slidecontainer {
+    margin-top: 95%;
+  }
+
+  .most {
+    width: 300px;
+    top: 40%;
+  }
+
+  .slider {
+    width: 300px;
+  }
+
+  .slider-numbers {
+    justify-content: space-around;
+    width: 300px;
+    top: 25%;
+  }
+
+  .go-button {
+    margin-top: 80%;
+    left: 48%;
+    padding: 5px 10px;
   }
 }
 
@@ -599,5 +624,49 @@ body {
 
   .firstRow {
     margin-top: 50%;
+  }
+
+  .link-wrap {
+    flex-direction: column;
+    padding: 40px;
+    left: 50%;
+  }
+
+  .participants-link img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+
+  .byprice {
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: 30%;
+  }
+
+  .slidecontainer {
+    margin-top: 370px;
+  }
+
+  .most {
+    width: 300px;
+    top: 40%;
+  }
+
+  .slider {
+    width: 300px;
+  }
+
+  .slider-numbers {
+    justify-content: space-around;
+    width: 300px;
+    top: 300px;
+  }
+
+  .go-button {
+    margin-top: 400px;
+    left: 48%;
+    padding: 5px 10px;
   }
 }
