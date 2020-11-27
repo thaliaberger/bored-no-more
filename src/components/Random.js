@@ -43,10 +43,6 @@ function Random(props) {
     window.open(state.link);
   }
 
-  function redirect() {
-    window.open("/", "_self");
-  }
-
   return (
     <div>
       <Navbar />
@@ -81,15 +77,18 @@ function Random(props) {
             <p>{state.link ? "hint" : ""}</p>
           </Link>
         </div>
-        <button onClick={redirect} className="go-back">
-          try again
-        </button>
+        <Link to="/random">
+          <button className="go-back" onClick="window.location.reload()">
+            try again
+          </button>
+        </Link>
 
         <div className="joke">
           <h3>since you like surprises...</h3>
           <p>{joke.setup ? joke.setup.toLowerCase() : ""}</p>
 
           <div className="joke-btn-answer">
+            <Link to="/random"></Link>
             <button className="joke-button">see</button>
             <p className="joke-answer">
               {joke.punchline ? joke.punchline.toLowerCase() : ""}
