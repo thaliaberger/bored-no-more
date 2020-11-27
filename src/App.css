@@ -554,9 +554,13 @@ body {
   }
 
   .go-button {
-    margin-top: 80%;
+    margin-top: 50px;
     left: 48%;
     padding: 5px 10px;
+  }
+
+  .joke-btn-answer {
+    height: 200px;
   }
 }
 
