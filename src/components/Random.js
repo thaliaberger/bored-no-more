@@ -86,7 +86,6 @@ function Random(props) {
         <div className="joke">
           <h3>since you like surprises...</h3>
           <p>{joke.setup ? joke.setup.toLowerCase() : ""}</p>
-
           <div className="joke-btn-answer">
             <Link to="/random"></Link>
             <button className="joke-button">see</button>

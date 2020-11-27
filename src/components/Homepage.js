@@ -11,16 +11,16 @@ function Homepage() {
       />
       <div className="links-home">
         <Link className="link" to={"/type"}>
-          by type
+          type
         </Link>
         <Link className="link" to={"/price"}>
-          by price
+          price
         </Link>
         <Link className="link" to={"/participants"}>
-          by number of participants
+          number of participants
         </Link>
         <Link className="link" to={"/accessibility"}>
-          by accessibility
+          accessibility
         </Link>
         <Link className="link surprise" to={"/random"}>
           surprise me
