@@ -212,8 +212,8 @@ body {
   font-weight: 500;
   background-color: #8ec6c5;
   border-radius: 15px;
-  padding: 10px;
-  margin-top: 100px;
+  padding: 20px 50px;
+  margin-top: 80px;
   transition-duration: 0.5s;
 }
 
@@ -308,7 +308,7 @@ body {
   position: absolute;
   display: flex;
   justify-content: center;
-  margin-top: 35%;
+  top: 45%;
 }
 
 .access {
@@ -475,16 +475,17 @@ body {
 
   .logo-nav {
     height: 30px;
+    margin-left: 0;
   }
 
   .link2 {
     font-size: 10px;
-    padding: 0 12px;
+    padding: 0 7px;
   }
 
   .links-navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -535,7 +536,7 @@ body {
   }
 
   .slidecontainer {
-    margin-top: 95%;
+    top: 20%;
   }
 
   .most {
@@ -545,6 +546,7 @@ body {
 
   .slider {
     width: 300px;
+    top: 35%;
   }
 
   .slider-numbers {
@@ -561,6 +563,10 @@ body {
 
   .joke-btn-answer {
     height: 200px;
+    margin-top: 0;
+  }
+
+  .joke-button {
   }
 }
 
@@ -607,14 +613,14 @@ body {
   }
 
   .logo-nav {
-    height: 25px;
+    height: 50px;
     display: flex;
     justify-content: center;
   }
 
   .link2 {
     font-size: 15px;
-    padding: 0 5px;
+    padding: 0 20px;
   }
 
   .links-navbar {
@@ -666,7 +672,7 @@ body {
   }
 
   .slidecontainer {
-    margin-top: 370px;
+    top: 30%;
   }
 
   .most {
@@ -681,7 +687,7 @@ body {
   .slider-numbers {
     justify-content: space-around;
     width: 300px;
-    top: 300px;
+    top: 220px;
   }
 
   .go-button {

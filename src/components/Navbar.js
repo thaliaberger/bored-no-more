@@ -12,16 +12,16 @@ const Navbar = () => {
       </Link>
       <div className="links-navbar">
         <Link className="link2" to={"/type"}>
-          by type
+          type
         </Link>
         <Link className="link2" to={"/price"}>
-          by price
+          price
         </Link>
         <Link className="link2" to={"/participants"}>
-          by number of participants
+          number of participants
         </Link>
         <Link className="link2" to={"/accessibility"}>
-          by accessibility
+          accessibility
         </Link>
         <Link className="link2 surprise" to={"/random"}>
           surprise me
